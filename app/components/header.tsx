@@ -1,0 +1,65 @@
+export default function Header() {
+  return (
+    <div className="fixed top-0 w-full p-4 shadow">
+      <div className="flex w-full justify-center gap-12">
+        <a
+          href="/"
+          className="relative
+              after:bg-gray-400
+              after:absolute
+              after:h-[2px]
+              after:w-full
+              after:bottom-0
+              after:left-0
+              after:scale-x-0
+              after:origin-right
+              hover:after:scale-x-100
+              hover:after:origin-left
+              after:transition-transform
+              after:duration-500
+              cursor-pointer"
+        >
+          Home
+        </a>
+        <a
+          href="/pindai"
+          className="relative
+              after:bg-gray-400
+              after:absolute
+              after:h-[2px]
+              after:w-full
+              after:bottom-0
+              after:left-0
+              after:scale-x-0
+              after:origin-right
+              hover:after:scale-x-100
+              hover:after:origin-left
+              after:transition-transform
+              after:duration-500
+              cursor-pointer"
+        >
+          Pindai
+        </a>
+        <a
+          href="/laporan"
+          className="relative
+              after:bg-gray-400
+              after:absolute
+              after:h-[2px]
+              after:w-full
+              after:bottom-0
+              after:left-0
+              after:scale-x-0
+              after:origin-right
+              hover:after:scale-x-100
+              hover:after:origin-left
+              after:transition-transform
+              after:duration-500
+              cursor-pointer"
+        >
+          Laporan
+        </a>
+      </div>
+    </div>
+  );
+}
