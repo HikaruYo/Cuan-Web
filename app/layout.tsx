@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
-import { LaporanProvider } from "./context/laporanProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +30,8 @@ export default function RootLayout({
       >
         <Header></Header>
 
-        <div className="flex min-h-screen min-w-screen p-32">
-          <LaporanProvider>{children}</LaporanProvider>
+        <div className="flex min-h-screen min-w-screen p-14">
+          {children}
         </div>
       </body>
     </html>

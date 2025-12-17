@@ -1,12 +1,10 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useLaporan } from "@/app/context/laporanProvider";
 
 export default function Form() {
   const [preview, setPreview] = useState<string | null>(null);
   const router = useRouter();
-  const { setData } = useLaporan();
 
   function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -35,7 +33,6 @@ export default function Form() {
 
       if (data) {
         console.log("Berhasil dikirim", data);
-        setData(data);
         router.push("/laporan");
       } else {
         console.log("Gagal dikirim");

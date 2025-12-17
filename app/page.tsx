@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex flex-col w-full gap-14">
+    <main className="flex flex-col w-full gap-14 p-6">
       <div className="gap-4">
         <h3 className="text-4xl font-semibold">
           Catat keuangan mu sekarang juga!

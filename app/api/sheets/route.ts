@@ -43,7 +43,7 @@ function pemasukanRow(rows: string[][] = []): PemasukanRow[] {
     tanggal: row[1] ?? "",
     jam: row[2] ?? "",
     alamat: row[3] ?? "",
-    bartotalang: row[4] ?? "",
+    total: row[4] ?? "",
   }));
 }
 
